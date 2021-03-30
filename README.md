@@ -1,37 +1,44 @@
-# basic-api-server
-
-# Class 02- Lab02
-# Basic Express Server
+# Class 03- Lab03
+# Basic API Server
 ## Deployment Test
 ### Author: Boshra Jaber
-* [tests report](https://github.com/BoshraJaber/basic-express-server/actions)
-* [Heroku application for main branch](https://boshra-basic-express-server.herokuapp.com/)
-* [Pull Request to main](https://github.com/BoshraJaber/basic-express-server/pull/3)
+* [tests report]()
+* [Heroku application for main branch]()
+* [Pull Request to main]()
 
 ## Setup
 - `.env` requirements:
  * PORT - 3000
 - Install Required Packages:
-  * `npm i express dotenv`
+  * `npm i express dotenv cors morgan uuid`
   * `npm i -d jest supertest eslint`
   * `npm i -g nodemon`
 - Running the app
  * `npm start`
- 1. Endpoint: `/person/?name=Boshra`
+ 1. Endpoint: `/api/v1/clothes/`
    * Returns Object:
   ```
   {
-   "name" : "Boshra"
+   "type" : "T-shirt",
+   "price" : "5JD"
   }
   ```
- 2. Endpoint: `/person`
+ 2. Endpoint: `/api/v1/clothes/id`
+  1. Method : Get 
    * Returns Object:
   ```
   {
-    "status": 500,
-    "route": "/person"
-    }
+   "type" : "T-shirt",
+   "price" : "5JD"
+  }
   ``` 
+  2.  Method : POST 
+   * Returns Object that have been added
+  3.  Method : PUT 
+   * Returns Object that have been updated
+  4. Method : Delete 
+   * Returns Object with the record of the ID deleted.
+
  3. Endpoint: `/error`
    * Returns Object:
   ```
@@ -66,4 +73,4 @@ Lint Tests: `npm run lint`
 
 ## UML:
 Here is a UML of my code: 
-![](./src/lab02.png)
+![](./src/lab03.png)
