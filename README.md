@@ -2,9 +2,10 @@
 # Basic API Server
 ## Deployment Test
 ### Author: Boshra Jaber
-* [tests report]()
-* [Heroku application for main branch]()
-* [Pull Request to main]()
+* [tests report](https://github.com/BoshraJaber/basic-api-server/actions)
+* [Heroku application for main branch- Food ](https://boshra-basic-api-server.herokuapp.com/api/v1/food)
+* [Heroku application for main branch- Clothes ](https://boshra-basic-api-server.herokuapp.com/api/v1/clothes)
+* [Pull Request to main](https://github.com/BoshraJaber/basic-api-server/pull/2)
 
 ## Setup
 - `.env` requirements:
